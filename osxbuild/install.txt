@@ -1,0 +1,61 @@
+##########################编译libmicrohttpd
+
+
+注意：不要在OS 10.12系统上编译，推荐在OS 10.11系统上编译
+
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+
+$ brew install libgcrypt
+
+$ brew install gnutls
+
+去libmicrohttpd官网，下载最新版本的源码
+
+cd 到源码目录
+
+$ ./configure --help查看编译选项【找开启https的方法，找链接libgcrypt和gnutls的方法】
+
+$ ./configure CFLAGS="-mmacosx-version-min=10.7" --enable-https --with-libgcrypt-prefix=/usr/local -with-gnutls=/usr/local
+
+$ make && make install
+
+支持https的libmicrohttpd库已经编好，在/usr/local下查看。
+
+
+
+
+#########################使用libmicrohttpd
+
+在你编译应用程序时链接下面这些库：
+
+libgpg-error.0.dylib
+libgcrypt.20.dylib
+
+libffi.6.dylib
+libgmp.10.dylib
+libhogweed.4.dylib
+libnettle.6.dylib
+libp11-kit.0.dylib
+libtasn1.6.dylib
+libunistring.2.dylib
+libgnutls.30.dylib
+
+libmicrohttpd.a
+
+
+
+
+最终，在你发布应用程序时要带上这几个库文件一起打包：
+libgpg-error.0.dylib
+libgcrypt.20.dylib
+libffi.6.dylib
+libgmp.10.dylib
+libhogweed.4.dylib
+libnettle.6.dylib
+libp11-kit.0.dylib
+libtasn1.6.dylib
+libunistring.2.dylib
+libgnutls.30.dylib
+
+
+	

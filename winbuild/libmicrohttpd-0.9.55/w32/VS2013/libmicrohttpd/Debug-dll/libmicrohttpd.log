@@ -1,0 +1,46 @@
+﻿  mhd_compat.c
+  mhd_itc.c
+  mhd_sockets.c
+  mhd_threads.c
+  mhd_str.c
+  sysfdsetsize.c
+  tsearch.c
+  response.c
+  reason_phrase.c
+  postprocessor.c
+  mhd_mono_clock.c
+  memorypool.c
+  md5.c
+  internal.c
+  digestauth.c
+  daemon.c
+E:\httpd\libgcrypt\include\gcrypt.h(39): warning C4142: 类型的良性重定义
+  connection.c
+  basicauth.c
+  base64.c
+  connection_https.c
+  正在生成代码...
+  Generating .dll description resource
+  Processing: E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\..\common\..\..\configure.ac
+  Detected MHD version: 0.9.55
+  Generating E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\..\common\microhttpd_dll_res_vc.rc
+  E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\..\common\microhttpd_dll_res_vc.rc was generated 
+  E:\httpd\libmicrohttpd-0.9.55\src\include\microhttpd.h -> E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\microhttpd.h
+  复制了 1 个文件
+     正在创建库 E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libmicrohttpd-dll_d.lib 和对象 E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libmicrohttpd-dll_d.exp
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+libgcrypt.lib(w32-thread.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(w32-thread.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(w32-lock.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(w32-lock.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(w32-gettext.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(w32-gettext.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(w32-estream.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(w32-estream.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(visibility.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(visibility.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(version.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(version.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(strsource.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(strsource.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(strerror.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(strerror.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(init.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(init.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(estream.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(estream.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(estream-printf.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(estream-printf.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(code-to-errno.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(code-to-errno.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(code-from-errno.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(code-from-errno.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libgcrypt.lib(b64dec.obj) : warning LNK4099: 未找到 PDB“libgpg-error.pdb”(使用“libgcrypt.lib(b64dec.obj)”或在“E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libgpg-error.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  libmicrohttpd.vcxproj -> E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\Output\libmicrohttpd-dll_d.dll

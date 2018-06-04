@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v120:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native64Bit
+Debug-dll|Win32|E:\httpd\libmicrohttpd-0.9.55\w32\VS2013\|

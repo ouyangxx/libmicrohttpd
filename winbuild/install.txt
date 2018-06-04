@@ -1,0 +1,22 @@
+参考过的资料：
+https://www.gnu.org/software/libmicrohttpd/
+https://directory.fsf.org/wiki/Libgcrypt#tab=About_this_entry
+https://github.com/ShiftMediaProject/libgcrypt/releases
+http://www.gnutls.org/download.html
+ftp://ftp.gnutls.org/gcrypt/gnutls/w32/
+http://www.lysator.liu.se/~nisse/nettle/
+https://gmplib.org/
+https://github.com/neovim/neovim/issues/1749
+
+注意：libmicrohttpd-0.9.55源码被修改过：
+
+1. 开启了HTTPS编译支持(预定义宏HTTPS_SUPPORT)，并链接了https功能依赖的两个库（libgcrypt和libgnutls）
+2. 开启https编译后，SSIZE_MAX 宏未定义，增加的定义如下
+#if defined(_WIN64)
+    #define SSIZE_MAX _I64_MAX
+#else
+    #define SSIZE_MAX LONG_MAX
+#endif
+
+3. 开启https编译后，源代码中所有的 #include <gnutls/gnutls.h> 和#include <gcrypt.h>找不到头文件
+改为：#include "gnutls/gnutls.h" 和#include "gcrypt.h"
